@@ -9,7 +9,7 @@ import officeImg from "@/assets/office-boardroom.jpg";
 import libraryImg from "@/assets/law-library.jpg";
 import handshakeImg from "@/assets/handshake.jpg";
 import receptionImg from "@/assets/office-reception.jpg";
-import heroSlaoque from "@/assets/heroSlaoque.mp4";
+import heromp4 from "@/assets/hero.mp4";
 import { Briefcase, Building2, Users, Scale, Shield, Heart, ArrowRight } from "lucide-react";
 
 const practiceAreas = [
@@ -131,7 +131,7 @@ const Index = () => {
               >
                 <video
                   ref={videoRef}
-                  src={heroSlaoque}
+                  src={heromp4}
                   autoPlay
                   muted
                   loop
