@@ -9,6 +9,7 @@ import officeImg from "@/assets/office-boardroom.jpg";
 import libraryImg from "@/assets/law-library.jpg";
 import handshakeImg from "@/assets/handshake.jpg";
 import receptionImg from "@/assets/office-reception.jpg";
+import heroSlaoque from "@/assets/heroSlaoque.mp4";
 import { Briefcase, Building2, Users, Scale, Shield, Heart, ArrowRight } from "lucide-react";
 
 const practiceAreas = [
@@ -47,7 +48,6 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Loader */}
       <AnimatePresence>
         {showLoader && (
           <motion.div
@@ -85,11 +85,9 @@ const Index = () => {
         )}
       </AnimatePresence>
 
-      {/* Hero — Asymmetric */}
       <section className="relative min-h-screen bg-dark overflow-hidden">
         <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full min-h-screen">
-            {/* Left — Text */}
             <div className="flex flex-col justify-center py-32 lg:py-0 lg:pr-16 relative">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
@@ -114,7 +112,6 @@ const Index = () => {
                 </div>
               </motion.div>
 
-              {/* Vertical divider */}
               <div className="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 h-2/3">
                 <motion.div
                   className="w-px bg-gold/20"
@@ -125,7 +122,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right — Video */}
             <div className="hidden lg:flex items-center justify-center relative">
               <motion.div
                 className="relative w-full h-[70vh] overflow-hidden"
@@ -135,7 +131,7 @@ const Index = () => {
               >
                 <video
                   ref={videoRef}
-                  src="/video/hero.mp4"
+                  src={heroSlaoque}
                   autoPlay
                   muted
                   loop
@@ -151,7 +147,6 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
           initial={{ opacity: 0 }}
@@ -162,7 +157,6 @@ const Index = () => {
         </motion.div>
       </section>
 
-      {/* Stats */}
       <section className="bg-dark-medium py-16 border-t border-b border-gold/10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -178,7 +172,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Preview */}
       <section className="section-dark py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -208,7 +201,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Practice Areas */}
       <section className="bg-dark-medium py-24">
         <div className="container mx-auto px-6">
           <ScrollReveal>
@@ -239,7 +231,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Image Banner */}
       <section className="relative h-[50vh] overflow-hidden">
         <img src={libraryImg} alt="Biblioteca Jurídica" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-dark/70" />
@@ -255,7 +246,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Differentials */}
       <section className="section-dark py-24">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
