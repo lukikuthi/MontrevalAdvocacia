@@ -78,10 +78,10 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-champagne/30 text-xs font-sans tracking-wider">
-            © {new Date().getFullYear()} Montreval Advocacia. Todos os direitos reservados.
+            © {new Date().getFullYear()} Montreval Advocacia. Projeto para Portfolio feito pelo melhor.
           </p>
           <p className="text-champagne/30 text-xs font-sans tracking-wider">
-            OAB/SP nº 00.000
+            Lucas Kikuthi
           </p>
         </div>
       </div>
